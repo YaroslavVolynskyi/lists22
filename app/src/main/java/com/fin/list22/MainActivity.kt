@@ -52,9 +52,6 @@ class MainActivity : ComponentActivity() {
                         backStack = backStack,
                         onBack = { backStack.removeLastOrNull() },
                         entryDecorators = listOf(
-
-//                            rememberSavedStateNavEntryDecorator(),       // sets up SavedStateRegistry per entry
-//                            rememberViewModelStoreNavEntryDecorator(),
                             rememberSaveableStateHolderNavEntryDecorator(),
                             rememberViewModelStoreNavEntryDecorator()
                         ),
